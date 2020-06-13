@@ -1,8 +1,9 @@
-language: python
-python: 3.5
-sudo: required
-dist: trusty
+language: generic
+
 services: docker
+
+dist: xenial
+
 filter_secrets: false
 
 cache:
@@ -24,8 +25,6 @@ addons:
     - $(ls wheelhouse/*.whl)
 
 matrix:
-  exclude:
-  - python: 3.5
 
   include:
   - name: "Python 2.7 x86_64 linux"
