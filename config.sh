@@ -216,8 +216,8 @@ function pre_build {
     suppress build_proj
     suppress build_sqlite
     suppress build_expat
-    suppress build_geos
-    suppress build_gdal
+    build_geos
+    build_gdal
 }
 
 
