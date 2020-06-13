@@ -127,7 +127,7 @@ function build_gdal {
             --with-crypto=yes \
             --with-curl=curl-config \
             --with-expat=${EXPAT_PREFIX} \
-            --with-geos=${DEPS_PREFIX}/bin/geos-config \
+            --with-geos=${BUILD_PREFIX}/bin/geos-config \
             --with-geotiff=internal \
             --with-gif \
             --with-grib \
@@ -217,7 +217,7 @@ function pre_build {
     suppress build_sqlite
     suppress build_expat
     suppress build_geos
-    suppress build_gdal
+    build_gdal
 }
 
 
