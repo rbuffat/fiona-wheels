@@ -25,13 +25,13 @@ env:
 matrix:
 
   include:
-      - name: "Python 3.5 osx"
-        os: osx
-        language: generic
-        env:
-        - MB_PYTHON_VERSION=3.5
-        - NP_BUILD_DEP=numpy==1.14.5
-        - NP_TEST_DEP=numpy==1.14.5
+      #- name: "Python 3.5 osx"
+        #os: osx
+        #language: generic
+        #env:
+        #- MB_PYTHON_VERSION=3.5
+        #- NP_BUILD_DEP=numpy==1.14.5
+        #- NP_TEST_DEP=numpy==1.14.5
       - name: "Python 3.6 osx"
         os: osx
         language: generic
@@ -39,21 +39,21 @@ matrix:
         - MB_PYTHON_VERSION=3.6
         - NP_BUILD_DEP=numpy==1.14.5
         - NP_TEST_DEP=numpy==1.14.5
-      - name: "Python 3.7 osx"
-        os: osx
-        language: generic
-        env:
-        - MB_PYTHON_VERSION=3.7
-        - NP_BUILD_DEP=numpy==1.14.5
-        - NP_TEST_DEP=numpy==1.14.5
-      - os: osx
-        language: generic
-        osx_image: xcode10.1
-        env:
-        - MB_PYTHON_VERSION=3.8
-        - NP_BUILD_DEP=numpy==1.17.3
-        - NP_TEST_DEP=numpy==1.17.3
-        - MB_PYTHON_OSX_VER=10.9
+      #- name: "Python 3.7 osx"
+        #os: osx
+        #language: generic
+        #env:
+        #- MB_PYTHON_VERSION=3.7
+        #- NP_BUILD_DEP=numpy==1.14.5
+        #- NP_TEST_DEP=numpy==1.14.5
+      #- os: osx
+        #language: generic
+        #osx_image: xcode10.1
+        #env:
+        #- MB_PYTHON_VERSION=3.8
+        #- NP_BUILD_DEP=numpy==1.17.3
+        #- NP_TEST_DEP=numpy==1.17.3
+        #- MB_PYTHON_OSX_VER=10.9
 
 before_install:
     - python -c "import fcntl; fcntl.fcntl(1, fcntl.F_SETFL, 0)"

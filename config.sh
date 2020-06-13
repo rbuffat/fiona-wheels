@@ -127,7 +127,7 @@ function build_gdal {
             --with-crypto=yes \
             --with-curl=curl-config \
             --with-expat=${EXPAT_PREFIX} \
-            --with-geos=${DEPS_PREFIX}/bin/geos-config \
+            --with-geos=${BUILD_PREFIX}/bin/geos-config \
             --with-geotiff=internal \
             --with-gif \
             --with-grib \
